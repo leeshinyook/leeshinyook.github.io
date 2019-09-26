@@ -1,21 +1,49 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+title: "HTTP 서버 응답"
+date: 2019-09-26
+categories: node.js 
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+`http 상태코드`
 
-Jekyll also offers powerful support for code snippets:
+HTTP 통신 시, 서버에서 보내주는 여러가지 응답 코드들이 있다.
+100번대부터 500번대까지 클라이언트(웹 브라우저)에서 서버로 `요청`을 보내면 서버는 `응답`을 보내주는데,
+이러한 RESPONSE CODE를 통해 어떠한 점이 문제인지 자세히는 아니지만, 대략적인 문제를 알아볼 수 있다.
 
-​```python
-def print_hi(name):
-  print("hello", name)
-print_hi('Tom')
-​```
+1. `1XX`
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+100번대는 주로 정보의 처리과정이라고 볼 수 있다. 즉, 아직 리퀘스트를 받고 이 요청을 처리중에 있다는 말이다.
+
+2.  `2XX`
+
+200번대는 대부분 정상의 의미를 지닌다. 요약하여 설명하겠다.
+
+200 - OK (GET, PUT)
+201 - 작성되었다. Create의미를 지닌다. (POST)
+204 - OK, 하지만 돌려줄 어떠한 정보가 없음.NO Content (DELETE)
+
+3. `3XX`
+
+300번대는 Redirection.
+클라이언트 요청에 대한 다른 적절한 위치나 대안을 제공한다. 
+
+4. `4XX`
+
+웹을 개발하다보면, 제일 많이 만나는 400번대는 주로 에러를 뜻한다.
+
+400 - 잘못된 요청
+401 - 권한없음. 예를 들어, 로그인이 필요한 서비스인경우 로그인을 하지않고 접속하였을때, 이러한 에러를 만날 수 있다.
+404 - 페이지를 찾을 수 없다.
+409 - 충돌 자월을 중복생성할때 발생한다.
+
+5. `5XX`
+
+서버에러, 클라이언트쪽이 아닌 서버에서 무엇인가 잘못되었다는 사실을 알 수 있는 에러코드이다.
+500 - 서버가 요청을 처리하는 중 에러발생.
+503 - 서버의 일시적에러, 과부화나 점검중일 가능성이 크다.
+
+모든 응답코드를 작성하지 않았지만, 가장 많이 보이는 코드는 200번대와 400번대 응답코드이다.
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
