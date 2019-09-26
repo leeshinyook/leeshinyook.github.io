@@ -112,11 +112,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Contact E-mail **tlsdbr97@gmail.com**"
   location         : "Seoul,Korea"
-  email            :  "tlsdbr97@gmail.com"
+  email            : "tlsdbr97@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:tlsdbr97@gmail.com
+      # url: mailto:tlsdbr97@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -287,9 +287,9 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: default
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
