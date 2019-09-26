@@ -1,7 +1,7 @@
 ---
 title: "HTTP 서버 응답"
 date: 2019-09-26
-categories: node.js 
+categories: HTTP DEV
 ---
 
 `http 상태코드에 대한 설명 100번대 부터 500번대 까지`
