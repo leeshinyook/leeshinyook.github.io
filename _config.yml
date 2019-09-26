@@ -20,7 +20,7 @@ locale                   : "en-US"
 title                    : "Shin's Dev"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "이신육"
+name                     : "Shinyook"
 description              : "ConTact E-mail : tlsdbr97@gmail.com"
 url                      : "https://leeshinyook.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : ""# the subpath of your site, e.g. "/blog"
