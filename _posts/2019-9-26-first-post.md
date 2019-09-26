@@ -44,3 +44,7 @@ HTTP 통신 시, 서버에서 보내주는 여러가지 응답 코드들이 있�
 
 모든 응답코드를 작성하지 않았지만, 가장 많이 보이는 코드는 200번대와 400번대 응답코드이다.
 
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
