@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shin's Dev"
+title                    : "ShinYook's Dev Note"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Shinyook"
@@ -110,7 +110,7 @@ analytics:
 author:
   name             : "이신육"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Contact E-mail **tlsdbr97@gmail.com**"
+  bio              : "DanKook Univ. Department of software, Contact E-mail **tlsdbr97@gmail.com**"
   location         : "Seoul,Korea"
   email            : "tlsdbr97@gmail.com"
   links:
