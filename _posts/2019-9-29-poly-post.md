@@ -17,10 +17,12 @@ categories: DEV TDD
 ===
 클래스는 Term과 이를 이용하여 항의 연속적인 표현을 위해 Polynomial클래스를 정의한다.<br>
 우선 클래스의 이름과 그들이 가지는 내용을 보자.
+
 *다음 그림을 보자*
 
-...:
-![poly]({{"/asset/poly.png"}})
+
+![poly]({{"/asset/poly.png"}})<br>
+
 *이미지출처 : https://www.mathsisfun.com/algebra/polynomials.html*
 
 term은 각각의 항을 의미하고, 이들을 모아서 terms, term끼리 연산구조를 가지고 모여있는 다항식을
