@@ -1,7 +1,7 @@
 ---
 title: "[C++] Polynomial 다항식의 연산"
 date: 2019-09-29
-categories: DEV TDD
+categories: DEV C++ DataStructure
 ---
 
 `다항식(Polynomial)의 덧셈과 곱셈에 대해서`
